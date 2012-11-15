@@ -1,0 +1,8 @@
+# Remi's git config file
+[user]
+	name = Remi Bergsma
+	email = github@remi.nl
+[log]
+	decorate = true
+[color]
+	ui = auto
