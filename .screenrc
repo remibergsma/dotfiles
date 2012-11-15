@@ -1,0 +1,25 @@
+# Remi's .screenrc file
+
+shell           -$SHELL
+defscrollback   16024
+
+defescape       ^Aa
+escape          ^Aa
+defflow         off
+
+# mac has xterm-color
+termcapinfo     xterm-256color|xterm-color|xterm|rxvt|rxvt-unicode 'hs:ts' # always show bottom bar in xterm
+termcapinfo     xterm-256color|xterm-color|xterm|rxvt|rxvt-unicode ti@:te@ # normal scrollbackbuffer
+
+# nice red bar with tabs
+hardstatus      lastline "%{+ wk}%H %{-} %-Lw%42>%{= rw} %n%f* %t %{-}%+Lw"
+
+startup_message off
+
+# From Stephen Shirley
+# Don't block command output if the terminal stops responding
+# (like if the ssh connection times out for example).
+nonblock on
+
+# tab-completion flash in heading bar
+vbell off
