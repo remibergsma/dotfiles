@@ -24,3 +24,10 @@ set autoindent
 " Handle puppet files; same syntax as javascript
 autocmd BufNewFile,BufRead *.pp set ft=javascript
 
+" CFEngine is .cf
+au BufRead,BufNewFile *.cf set ft=cf3
+" Disable CFEngine folding
+set nofoldenable 
+" disable CFEngine abbreviations
+let g:DisableCFE3KeywordAbbreviations=0
+" Download plugin from: https://github.com/neilhwatson/vim_cf3
